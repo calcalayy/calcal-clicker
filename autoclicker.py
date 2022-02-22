@@ -14,8 +14,8 @@ l.config(font =("Courier", 8))
 l.place(x=90, y=15)
 
 #clcik stuff
-current_value = tk.StringVar()
-a = tk.Spinbox(top, from_=0, to=100, textvariable=current_value)
+click_value = tk.StringVar()
+a = tk.Spinbox(top, from_=0, to=100, textvariable=click_value)
 a.place(x=95, y = 0)
 
 #very important this make fastt
@@ -24,7 +24,7 @@ pag.PAUSE = 0
 #start the impotatnt
 def startClick():
    time.sleep(3)
-   for x in range (int(current_value.get())):
+   for x in range (int(click_value.get())):
        pag.click()
 
 #buttinsss
